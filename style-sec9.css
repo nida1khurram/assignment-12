@@ -1,0 +1,89 @@
+
+.sec9-container {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.sec9-skills-con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill {
+    margin: 20px;
+    animation: scaleIn 0.5s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+.skill:hover {
+    transform: scale(1.05);
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.circle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+.circle .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 1s forwards;
+}
+.skill-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 2;
+}
+.circle-progress {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+    transition: stroke 0.3s ease;
+}
+.skill:hover .circle-progress {
+    filter: brightness(1.2);
+}
+/* @keyframes progress {
+    from {
+        stroke-dasharray: 0 100;
+    }
+}
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill {
+        margin: 10px 0;
+    }
+} */

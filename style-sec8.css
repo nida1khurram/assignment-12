@@ -1,0 +1,124 @@
+
+.sec8-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.sec8-h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.sec8-sub-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.sec8-p{
+    font-size: 16px;
+    color:#c8ced6;
+    text-align: center;
+    margin: 20px 300px;  
+}
+.profile {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid #858383;
+   
+}
+.sec8-icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 20px 20px;
+    flex-shrink: 0;
+}
+.sec8-icon{
+    font-size:40px;
+    color:#678e19;
+    margin-top: 13px;
+     margin-left:23px;
+   
+}
+.sec8-p2{
+    font-size: 20px;
+    margin: 10px;
+    color: #2c2c2c;
+}
+.sec8-content{
+    margin: 10px;
+    color: #2c2c2c;
+}
+#border-1{
+    border-top: #858383; border-left: #858383;
+}
+#border-2{
+    border-top: #858383; border-right:#858383 ;
+}
+#border-3{
+    border-bottom: #858383; border-left: #858383;
+}
+#border-4{
+    border-bottom: #858383; border-right: #858383;
+}
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+.indicator.active {
+    background-color: #f7941d;
+}
+
+@media (max-width: 768px) {
+    .sec8-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sec8-sub-con {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec8-h2{
+        font-size: 25px;
+    }
+    .sec8-p{
+        text-align: center;
+        margin: 0px 0px;  
+        padding: 10px;
+    }
+    .sec8-content{
+        text-align: justify;
+    }
+    #border-1{
+        border: 2px solid #858383;
+        /* border-bottom: #858383; */
+        border-top: #858383; 
+        border-left: #858383;
+        border-right: #858383;
+        padding-bottom: 10px 0px;
+    }
+    #border-2{
+        border-top: #858383; border-right:#858383 ; border-left: #858383;
+        padding-bottom: 10px 0px;
+    }
+    #border-3{
+        border: 2px solid #858383;
+         border-left: #858383;border-right:#858383 ;border-top: #858383;
+         padding-bottom: 10px 0px;
+    }
+    #border-4{
+        border: 2px solid #858383;
+        border-left: #858383;border-right:#858383 ;border-top: #858383;
+        padding-bottom: 10px 0px;
+    }
+}
