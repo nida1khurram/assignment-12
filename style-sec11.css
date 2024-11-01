@@ -69,14 +69,16 @@
             text-align: center;
             margin:10px 10px;
         }
+       
         .sec11-map-text{
-           margin: 10px 10px;
+           margin: 10px 30px;
            font-size: 16px;
            text-align: center;
         }
         #sec11-contact{
             flex-direction: column;
             gap: 10px;
+           
         }
         #sec11-img{
             width: 70%;

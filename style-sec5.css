@@ -19,7 +19,9 @@
     background-color:#eeeeee;
     text-align: center;
     padding: 50px;
-
+}
+.sec5-sub-con:hover{
+    background-color:#948f8f;
 }
 .sec5-icon{
     position: absolute;
@@ -31,6 +33,9 @@
     border-radius: 50%;
     /* margin: 0 auto 16px; */
     padding: 10px;
+}
+.sec5-icon:hover{
+    background-color: #f5cf6e; 
 }
 
 .sec5-icon i{

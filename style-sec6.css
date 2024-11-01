@@ -40,6 +40,15 @@ width: 100%;
     width: 100%;
     height: 200px;
 }
+.grid-item{
+    opacity: 1;
+    transition: all 2s ease-in ;
+}
+
+.grid-item:hover{
+    opacity: 0.2;
+}
+
 .sec6-logo-container{
     width: 90%;
     margin: auto;

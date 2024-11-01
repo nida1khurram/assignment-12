@@ -18,14 +18,18 @@
     border: 2px solid #678e19;
     border-radius: 50%;
 }
+
 .sec7-circle-child{
     width: 40px;
     height: 40px;
-    background-color: yellow;
+    background-color: #f9bc1f;
     position: absolute;
     margin-top: -20px;
     margin-left: 55px;
     border-radius: 50%;
+}
+.sec7-circle-child:hover{
+    background-color: #f9d16c;
 }
 .sec7-no{
     font-size: 20px;
@@ -38,7 +42,9 @@
     color:#678e19;
     margin-top: 35px;
      margin-left: 45px;
-   
+}
+.sec7-icon:hover{
+    font-size:80px;
 }
 #square{
     width:35px;

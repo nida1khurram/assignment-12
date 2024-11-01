@@ -1,65 +1,41 @@
-/* https://www.youtube.com/watch?v=Z-QMEkYNNuI */
-/* https://www.youtube.com/watch?app=desktop&v=0w335-fzzRw */
-/* https://www.youtube.com/watch?v=kw13gCyI8No */
-/* https://www.youtube.com/watch?v=9X1p69BSp-k */
-.slider-container{
+
+.sec2{
     width: 100%;
-    margin: auto;
-    border: 1px solid #000;
-    position: relative;
-    overflow: hidden;
+    height: 450px;
 }
-.slider{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-/* to set slide width shrink=0 grow=0  basis=100%*/
-.slide{
-    flex: 0 0 100%;
+.main-slider{
+    width: 70%;
     height: 400px;
-    background-size:cover;
-    background-position: center;
-}
-.slider-controls{
     position: absolute;
-    bottom: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-image: url(./picture/slide-1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px black;
+    animation: img-slider 9s infinite linear;
+    opacity: 0.5;
 }
-.prev-slide,
-.next-slide{
-    margin: 0 10px;
-}
-.slide.active{
-    transform: translateX(0);
+@keyframes img-slider{
+    0%{opacity: 1;
+        background-image: url(./picture/slide-1.jpg);}
+    100%{opacity: 1;
+        background-image: url(./picture/slide-3.png);}
 }
 
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .slide {
-        height: 300px; /* Adjust height for smaller screens */
+    .sec2 {
+        width: 100%;
+        height: 200px;
     }
 
-    .slider-controls {
-        width: 90%; /* Adjust controls width */
+    .main-slider{
+        width: 100%;
+        height: 200px;
+        /* left: 10%; */
+        top: 133%;
     }
 }
 
-@media (max-width: 480px) {
-    .slide {
-        height: 200px; /* Further adjust height for very small screens */
-    }
-
-    .slider-controls {
-        flex-direction: column; /* Stack controls vertically */
-    }
-
-    .prev-slide,
-    .next-slide {
-        margin: 10px 0; /* Adjust margin for vertical layout */
-    }
-}

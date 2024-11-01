@@ -19,11 +19,14 @@
     border-radius: 50%;
     margin: 0 auto 16px;
     padding: 10px;
+    color: #8ec63f;
 }
+.sec3-icon:hover{
+    color: #4a760b;
+}
+
 .sec3-icon i{
     font-size: 90px;
-    /* display: flex;
-    justify-content: center; */
    margin-top: 20px;
     
 }
