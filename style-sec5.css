@@ -1,7 +1,14 @@
+#services{
+    border: 1px solid red;
+    margin-top: 20px;
+    padding-top: 20px;
+}
 .section5-h2{
     font-size: 48px;
     text-align: center;
     padding-top: 20px; 
+    /* margin-top: 50px; */
+    
 }
 .container-sec5{
     max-width: 1200px;

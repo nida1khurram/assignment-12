@@ -1,7 +1,7 @@
 .sec4-container{
 max-width: 100%;
 max-height: 500px;
-margin-bottom: 30px;
+margin-bottom: 50px;
 }
 .sec4-h2{
     font-size: 40px;
@@ -37,6 +37,9 @@ margin-bottom: 30px;
 }
 /* Responsive styles */
 @media (max-width: 768px) {
+    /* .sec4-container{
+        margin-bottom: 0px;
+        } */
     .sec4-h2{
         font-size: 30px;
     }
